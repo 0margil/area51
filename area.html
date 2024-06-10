@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área 51</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: url('https://imagenes.elpais.com/resizer/v2/44ELT5ORXVJTUBJRB7SQ4DR54Q.jpg?auth=85a5d0d875c266c250f19bac7df64f30efc07619cb22079e28c211c90a73f48a&width=1960&height=1103&smart=true') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #ffcc00;
+        }
+
+        header h1 {
+            font-size: 4em;
+            text-shadow: 3px 3px 6px #000;
+        }
+
+        nav {
+            background-color: #ffcc00;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: #1a1a1a;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #ffc107;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ffcc00;
+            box-shadow: 2px 2px 10px #000;
+            max-height: 400px;
+            display: block;
+            margin: 10px auto;
+        }
+
+        .button {
+            background-color: #ffcc00;
+            border: none;
+            color: #1a1a1a;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background-color: #1a1a1a;
+            color: #ffcc00;
+            border: 2px solid #ffcc00;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            color: #1a1a1a;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Área 51</h1>
+    </header>
+    <nav>
+        <a href="#history">Historia</a>
+        <a href="#mysteries">Misterios</a>
+        <a href="#photos">Fotos</a>
+        <a href="#videos">Videos</a>
+    </nav>
+    <div class="container">
+        <div id="history" class="section">
+            <h2>Historia del Área 51</h2>
+            <p>El Área 51 es una base militar altamente secreta ubicada en el desierto de Nevada, EE. UU. Se ha
+                convertido en un tema de muchas teorías de conspiración y avistamientos de ovnis. Oficialmente, el
+                gobierno de EE. UU. no reconoció su existencia hasta 2013.
+                <br><br>Historia
+                <br>Origen: El Área 51 fue establecida en 1955, durante la Guerra Fría, principalmente para pruebas y desarrollo de
+                aeronaves secretas.
+                <br>Proyectos Importantes: Entre los proyectos más famosos desarrollados en el Área 51 se incluyen el avión espía U-2, el
+                SR-71 Blackbird, y el avión furtivo F-117 Nighthawk.
+                <br><br>Propósito y Actividades
+                <br>Desarrollo y Pruebas de Aeronaves: El principal propósito del Área 51 es el desarrollo y la prueba de aeronaves
+                experimentales y sistemas de armas avanzadas.
+                <br>Investigación y Desarrollo: Se realizan investigaciones avanzadas en tecnología de aviación y defensa.
+                <br><br>Secreto y Conspiraciones
+                <br>Secreto: El Área 51 es altamente clasificada y el acceso está estrictamente controlado. Esto ha llevado a numerosas
+                teorías de conspiración sobre lo que ocurre dentro de sus instalaciones.
+                <br>Teorías de Conspiración: Muchas personas creen que el Área 51 es un sitio donde se investigan ovnis (objetos voladores
+                no identificados) y tecnología extraterrestre. Estas teorías se han popularizado debido a incidentes como el supuesto
+                accidente de un ovni en Roswell, Nuevo México, en 1947.
+                <br><br>Reconocimiento Oficial
+                <br>Reconocimiento: Durante muchos años, el gobierno de los Estados Unidos no reconoció oficialmente la existencia del Área
+                51. Esto cambió en 2013 cuando la CIA desclasificó documentos que confirmaban su existencia y su uso para el desarrollo
+                del avión espía U-2.
+                <br><br>Cultura Popular
+                <br>Influencia Cultural: El Área 51 ha sido tema de numerosos libros, películas, programas de televisión y videojuegos, lo
+                que ha contribuido a su estatus mítico y a la fascinación pública con el lugar.
+                <br>Eventos y Movimientos: En 2019, un evento de Facebook titulado "Storm Area 51, They Can't Stop All of Us" (Asaltemos el
+                Área 51, no pueden detenernos a todos) se volvió viral, atrayendo la atención de millones de personas. Aunque solo unas
+                pocas miles de personas se presentaron en las cercanías del Área 51, el evento destacó el continuo interés y la
+                curiosidad por este lugar.
+                <br><br>Ubicación y Acceso
+                <br>Ubicación: El Área 51 se encuentra cerca del Lago Groom, una base militar en medio del desierto. La ubicación remota y
+                las medidas de seguridad extremas hacen que sea casi imposible para el público acceder a sus instalaciones.
+                <br>Seguridad: El área está rodeada de letreros de advertencia, sensores de movimiento y patrullas de seguridad para
+                mantener a los curiosos a raya.</p>
+            <img src="https://c.files.bbci.co.uk/18623/production/_108757899_gettyimages-1163653999-594x594.jpg" alt="Historia del Área 51">
+            <div>
+                <button class="button" onclick="window.location.href='https://es.wikipedia.org/wiki/%C3%81rea_51'" >Leer
+                    más</button>
+            </div>
+        </div>
+        <div id="mysteries" class="section">
+            <h2>Misterios del Área 51</h2>
+            <p>Existen numerosos rumores y teorías sobre lo que realmente sucede dentro del Área 51, incluyendo
+                experimentos con tecnología extraterrestre y la investigación de ovnis estrellados.</p>
+            <button class="button" id="moreInfoBtn">Más Información</button>
+            <div id="moreInfoModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Misterios y Conspiraciones</h2>
+                    <p>Algunas de las teorías más populares incluyen la ingeniería inversa de naves extraterrestres y el
+                        almacenamiento de cuerpos alienígenas. Sin embargo, no hay evidencia concreta que respalde estas
+                        afirmaciones.</p>
+                    <img src="https://www.viveusa.mx/resizer/XaA-eUO6iEAm94pxJaYJ571cRxo=/1100x666/cloudfront-us-east-1.images.arcpublishing.com/eluniversal/UEP2EWFAVBEB5GQON47WT5RICU.jpg" alt="Tecnología extraterrestre">
+                    <p>El Área 51 ha sido durante mucho tiempo objeto de fascinación y teorías de conspiración debido a su naturaleza secreta y
+                    la falta de información oficial disponible al público. Una de las teorías más famosas es que el Área 51 alberga los
+                    restos del supuesto ovni que se estrelló en Roswell, Nuevo México, en 1947. Según esta teoría, los científicos y
+                    militares en el Área 51 habrían estudiado los restos y la tecnología extraterrestre. Esta teoría se complementa con la
+                    idea de que el gobierno de EE.UU. ha estado realizando ingeniería inversa de dicha tecnología alienígena para
+                    desarrollar nuevas armas y aeronaves avanzadas.</p>
+                    
+                    <p>Otra teoría popular sostiene que el gobierno de EE.UU. está en contacto directo con seres extraterrestres y que los
+                    mantienen en instalaciones subterráneas en el Área 51. Según estas especulaciones, se llevarían a cabo reuniones y
+                    acuerdos secretos con estos seres, e incluso se realizarían experimentos genéticos con humanos y extraterrestres,
+                    incluyendo la creación de híbridos. Además, la región alrededor del Área 51 ha sido el sitio de numerosos avistamientos
+                    de ovnis, lo que lleva a los teóricos de la conspiración a sugerir que estos avistamientos son pruebas de aeronaves
+                    experimentales o tecnología alienígena en pruebas. Las luces misteriosas vistas en los cielos alrededor de la base
+                    alimentan aún más estas teorías.</p>
+                    <p>El término "proyecto negro" se refiere a proyectos altamente secretos financiados con presupuestos encubiertos, y se
+                    cree que el Área 51 es el centro de numerosos programas negros del gobierno de EE.UU. Estos programas incluirían el
+                    desarrollo de armas avanzadas y tecnología furtiva. Aunque algunas teorías están basadas en hechos reales, como el
+                    desarrollo de aviones espía U-2 y SR-71, otras sugieren la existencia de aeronaves más avanzadas y secretas que aún no
+                    se han revelado al público.</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/F117_-_RIAT_2007_%282432431186%29.jpg/640px-F117_-_RIAT_2007_%282432431186%29.jpg" alt="proyecto negro">
+                    <p>Otra teoría sugiere que el Área 51 tiene vastas instalaciones subterráneas donde se realizan actividades secretas fuera
+                    del alcance del público y de los satélites espías extranjeros. Se especula que existen túneles subterráneos que conectan
+                    el Área 51 con otras instalaciones militares secretas en los Estados Unidos. Además, algunas teorías postulan que el
+                    Área 51 ha sido utilizada para experimentos de control mental, incluyendo el desarrollo de técnicas de manipulación
+                    mental y el uso de drogas psicotrópicas. Aunque el Proyecto MK-Ultra de la CIA, un programa de control mental, es real y
+                    documentado, se sugiere que actividades similares podrían haber tenido lugar en el Área 51.</p>
+                    <img src="https://images.ecestaticos.com/XeagxyHzcyLpyP0Zdg-E5-2vWg0=/0x229:2271x1429/600x315/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fa93%2F881%2F33e%2Fa9388133e95e5a065ef4d571a95b05e2.jpg" alt="Instalaciones subterraneas">
+                    <p>En resumen, el Área 51 es un hervidero de teorías y especulaciones, desde la investigación de tecnología extraterrestre
+                    y contacto con alienígenas hasta proyectos secretos y experimentos de control mental. La falta de información oficial y
+                    el alto nivel de secretismo que rodea la base han contribuido a la perpetuación de estas teorías, manteniendo el
+                    misterio y la fascinación pública sobre este lugar en el desierto de Nevada.</p>
+                </div>
+            </div>
+        </div>
+        <div id="photos" class="section">
+            <h2>Fotos del Área 51</h2>
+            <div>
+                <img src="https://static.nationalgeographic.es/files/styles/image_3200/public/09-area-51.jpg?w=1900&h=1267" alt="Foto 1 del Área 51">
+                <img src="https://images.theconversation.com/files/536155/original/file-20230706-19-6ho7f4.jpg?ixlib=rb-4.1.0&rect=0%2C889%2C4608%2C2304&q=45&auto=format&w=1356&h=668&fit=crop" alt="Foto 2 del Área 51">
+                <img src="https://ca-times.brightspotcdn.com/dims4/default/7b9129d/2147483647/strip/true/crop/2000x1308+0+0/resize/1200x785!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fff%2Fb6%2F1056acf44ff38f2797370f58b1e9%2Fla-photos-1staff-466299-na-area-51-event-3-brv.jpg" alt="Foto 3 del Área 51">
+            </div>
+            <div>
+                <button class="button" onclick="window.location.href='https://www.gettyimages.com.mx/fotos/area-51-alien'">Ver 
+                más fotos</button>
+        </div>
+        <div id="videos" class="section">
+            <h2>Videos del Área 51</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3RJS8OHM_KI?si=DtTkj-8YrUQBMEkR"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/x8sLRrO_6vo?si=7pRwglMmFMss3rDn"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TOcGSwJBPMQ?si=_8pGLmWhE-So4jFv"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/QxgRn_gFh4Q?si=-6L3egS1t4R1RZCG"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div>
+                <button class="button" onclick="alert('Más videos próximamente.')">Ver más videos</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        var modal = document.getElementById("moreInfoModal");
+        var btn = document.getElementById("moreInfoBtn");
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área 51</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .social-container {
+            text-align: center;
+            background-color: #333;
+            padding: 20px 0;
+        }
+
+        .social-container h3 {
+            color: #ffcc00;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+
+        .social-icons {
+            list-style: none;
+            padding: 0;
+        }
+
+        .social-icons li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: #ffcc00;
+            font-size: 2em;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #ffc107;
+        }
+    </style>
+</head>
+<div class="social-container">
+    <h3>Omar David Gil Gómez 4-I</h3>
+    <ul class="social-icons">
+        <li><a href="https://www.facebook.com/Omar.Gil.Gomez13/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+        <li><a href="https://www.instagram.com/omar.giil/" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
+        <li><a href="https://www.youtube.com/@sebas-ie9uh" target="_blank"><i class="fab fa-youtube-square"></i></a></li>
+    </ul>
+</div>
+</body>
+</html>
